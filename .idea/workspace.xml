@@ -4,14 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f1f3042-3470-41b4-8b8a-8372dea07fd2" name="Changes" comment="o">
+    <list default="true" id="3f1f3042-3470-41b4-8b8a-8372dea07fd2" name="Changes" comment="dep">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/TestProject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/AboutUs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Blog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/BlogSection_home.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/BookSection_home.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/DownloadSection_home.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/FeedbackSection_home.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Home_page_test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/MainPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/OfficialAgencies_home.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Organizations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SetUp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Specialist.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SpecialistsSection_home.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SubscriptionٍSection_home.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/partnersSection_home.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <favorite-branches>
@@ -50,9 +76,86 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.Specialist">
+    <configuration name="Specialist" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="GSGTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Specialist" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Specialist.googlePlayButtonIsClickable" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="GSGTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Specialist" />
+      <option name="METHOD_NAME" value="googlePlayButtonIsClickable" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Specialist,googlePlayButtonIsDisplayed and 1 more" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="GSGTest" />
+      <option name="TEST_OBJECT" value="PATTERN" />
+      <properties />
+      <listeners />
+      <patterns>
+        <pattern testClass="Specialist,googlePlayButtonIsDisplayed" />
+        <pattern testClass="Specialist,googlePlayButtonIsClickable" />
+      </patterns>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Specialist.googlePlayButtonIsDisplayed" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="GSGTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Specialist" />
+      <option name="METHOD_NAME" value="googlePlayButtonIsDisplayed" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Specialist.theShowMoreButtonIsClickable" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="GSGTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Specialist" />
+      <option name="METHOD_NAME" value="theShowMoreButtonIsClickable" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.Specialist" />
+        <item itemvalue="TestNG.Specialist.theShowMoreButtonIsClickable" />
+        <item itemvalue="TestNG.Specialist.googlePlayButtonIsClickable" />
+        <item itemvalue="TestNG.Specialist,googlePlayButtonIsDisplayed and 1 more" />
+        <item itemvalue="TestNG.Specialist.googlePlayButtonIsDisplayed" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -69,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694348177647</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="dep">
+      <created>1694348883362</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1694348883362</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -85,6 +195,26 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="o" />
-    <option name="LAST_COMMIT_MESSAGE" value="o" />
+    <MESSAGE value="dep" />
+    <option name="LAST_COMMIT_MESSAGE" value="dep" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/FeedbackSection_home.java</url>
+          <line>85</line>
+          <properties class="FeedbackSection_home">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
