@@ -1,91 +1,79 @@
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.qameta.allure.Description;
+import io.qameta.allure.Story;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
-import java.time.Duration;
-import java.util.List;
-
-import static java.lang.Thread.sleep;
-
 public class FeedbackSection_home extends Home_page_test {
 
-
-    @Test
-    public void iconIsDisplayed() {
-
+    @Story("Ensure the person icon is displayed")
+    @Description("open the home page and check the person icon is displayed")
+    @Test(description = "open home page and verify the person icon is displayed", priority = 30)
+    public void personIconIsDisplayed() {
+        jse.executeScript("window.scrollBy(0,1800)", "");
         WebElement icon = driver.findElement(By.xpath("/html/body/div[1]/section[4]/div/div/div[2]/div/div[1]/img"));
         Assert.assertTrue(icon.isDisplayed());
     }
 
-    @Test
+    @Story("Ensure the number text is displayed")
+    @Description("open the home page and check the number text is displayed")
+    @Test(description = "open home page and verify the number text is displayed and equal +500,000", priority = 31)
     public void textNumberIsDisplayed() {
-
         WebElement textNumber = driver.findElement(By.xpath("//*[text() = '+500,000']"));
         Assert.assertTrue(textNumber.isDisplayed());
+        String getText = textNumber.getText();
+        Assert.assertEquals(getText, "+500,000");
     }
 
-    @Test
+    @Story("Ensure the subTitle is displayed")
+    @Description("open the home page and check the subTitle is displayed")
+    @Test(description = "open home page and verify the subTitle is displayed and equal مستفيد ومستفيدة", priority = 32)
     public void subTitleIsDisplayed() {
-
         WebElement subTitle = driver.findElement(By.xpath("//*[text() = 'مستفيد ومستفيدة']"));
         Assert.assertTrue(subTitle.isDisplayed());
-    }
-// NOT WORKING
-//    @Test
-//    public void sliderIsDisplayed() {
-//
-//        WebElement slider = driver.findElement(By.xpath("//*[@id=\"swiper-wrapper-9e7b2102a9ae1e98d\"]"));
-//        Assert.assertTrue(slider.isDisplayed());
-//    }
-
-
-    //nidal
-    @Test
-    public void ensureScrollingTheSpecialistSlider() throws InterruptedException {
-
-//        WebElement scroll = driver.findElement(By.xpath("//div[10]/div/h2"));
-        jse.executeScript("window.scrollBy(0,1500)", "");
-        WebElement scroll = driver.findElement(By.xpath("/html/body/div[1]/section[5]/div/div/div/div/div[2]/div/div"));
-        sleep(500);
-
-        jse.executeScript("arguments[0].scrollLeft += 900;", scroll); // تمرير 500 بكسل إلى اليمين
-
-        // الانتظار لبعض الوقت لرؤية التأثير
-        try {
-            Thread.sleep(2000); // انتظر لمدة 2 ثانية
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
+        String getText = subTitle.getText();
+        Assert.assertEquals(getText, "مستفيد ومستفيدة");
     }
 
-    @Test
-    public void ratingIsDisplayed() throws InterruptedException {
-        jse.executeScript("window.scrollBy(0,1500)", "");
-        sleep(500);
-        WebElement rate = driver.findElement(By.xpath("/html/body/div[1]/section[5]/div/div/div/div/div[2]/div/div/div[5]/div/div/div/div/img"));
+    @Story("Ensure the feedback slider is displayed")
+    @Description("open the home page and check the feedback slider is displayed")
+    @Test(description = "open home page and verify the feedback slider is displayed", priority = 33)
+    public void sliderIsDisplayed() {
+        WebElement slider = driver.findElement(By.cssSelector(".kc-css-66359 .swiper-wrapper"));
+        Assert.assertTrue(slider.isDisplayed());
+    }
+
+    @Story("Ensure the feedback card is displayed")
+    @Description("open the home page and check the feedback card is displayed")
+    @Test(description = "open home page and verify the feedback card is displayed", priority = 34)
+    public void feedBackCardIsDisplayed() {
+        WebElement slider = driver.findElement(By.cssSelector(".swiper-slide:nth-child(4) > .testi-item"));
+        Assert.assertTrue(slider.isDisplayed());
+    }
+
+
+    @Story("Ensure the rating is displayed")
+    @Description("open the home page and check the rating on card is displayed")
+    @Test(description = "open home page and verify the rating on card is displayed", priority = 35)
+    public void ratingIsDisplayed() {
+        WebElement rate = driver.findElement(By.cssSelector(".swiper-slide:nth-child(5) .stars"));
         Assert.assertTrue(rate.isDisplayed());
     }
-// NIDAL
-//    @Test
-//    public void commentIsDisplayed() throws InterruptedException {
-//        jse.executeScript("window.scrollBy(0,1500)", "");
-//        sleep(500);
-//         WebElement comment = driver.findElement(By.xpath("/html/body/div[1]/section[5]/div/div/div/div/div[2]/div/div/div[8]/div/div/div/text()[1]"));
-//String d = comment.getText();
-//        System.out.println(d);
-//    }
-//
-//    @Test
-//    public void commentOwnerIsDisplayed() {
-//
-//        WebElement owner = driver.findElement(By.xpath("/html/body/div[1]/section[5]/div/div/div/div/div[2]/div/div/div[12]/div/div/div/h4"));
-//
-//    }
+
+    @Story("Ensure the comment is displayed")
+    @Description("open the home page and check the comment on card is displayed")
+    @Test(description = "open home page and verify the comment on card is displayed", priority = 36)
+    public void commentIsDisplayed() {
+        WebElement comment = driver.findElement(By.xpath("/html/body/div[1]/section[5]/div/div/div/div/div[2]/div/div/div[5]/div/div/div"));
+    }
+
+    @Story("Ensure the comment owner name is displayed")
+    @Description("open the home page and check the comment owner name on card is displayed")
+    @Test(description = "open home page and verify the comment owner name on card is displayed", priority = 37)
+    public void commentOwnerNameIsDisplayed() {
+        WebElement ownerName = driver.findElement(By.cssSelector(".swiper-slide:nth-child(5) h4"));
+        Assert.assertTrue(ownerName.isDisplayed());
+    }
 }

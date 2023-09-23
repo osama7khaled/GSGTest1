@@ -4,28 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f1f3042-3470-41b4-8b8a-8372dea07fd2" name="Changes" comment="dep">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TestProject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/AboutUs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Blog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/BlogSection_home.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/BookSection_home.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/DownloadSection_home.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/FeedbackSection_home.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Home_page_test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MainPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/OfficialAgencies_home.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Organizations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SetUp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Specialist.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SpecialistsSection_home.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SubscriptionٍSection_home.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/partnersSection_home.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+    <list default="true" id="3f1f3042-3470-41b4-8b8a-8372dea07fd2" name="Changes" comment="new update 21-9">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Blog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Blog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BlogSection_home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BlogSection_home.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BookSection_home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BookSection_home.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FeedbackSection_home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FeedbackSection_home.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Home_page_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Home_page_test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/OfficialAgencies_home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/OfficialAgencies_home.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Organizations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Organizations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Specialist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SpecialList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SpecialistsSection_home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SpecialistsSection_home.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,27 +59,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Specialist">
-    <configuration name="Specialist" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.FeedbackSection_home">
+    <configuration name="FeedbackSection_home" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="GSGTest" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Specialist" />
+      <option name="MAIN_CLASS_NAME" value="FeedbackSection_home" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -97,11 +87,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Specialist.googlePlayButtonIsClickable" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="FeedbackSection_home.commentIsDisplayed" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="GSGTest" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Specialist" />
-      <option name="METHOD_NAME" value="googlePlayButtonIsClickable" />
+      <option name="MAIN_CLASS_NAME" value="FeedbackSection_home" />
+      <option name="METHOD_NAME" value="commentIsDisplayed" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -109,24 +99,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Specialist,googlePlayButtonIsDisplayed and 1 more" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="GSGTest" />
-      <option name="TEST_OBJECT" value="PATTERN" />
-      <properties />
-      <listeners />
-      <patterns>
-        <pattern testClass="Specialist,googlePlayButtonIsDisplayed" />
-        <pattern testClass="Specialist,googlePlayButtonIsClickable" />
-      </patterns>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Specialist.googlePlayButtonIsDisplayed" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="FeedbackSection_home.commentOwnerNameIsDisplayed" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="GSGTest" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Specialist" />
-      <option name="METHOD_NAME" value="googlePlayButtonIsDisplayed" />
+      <option name="MAIN_CLASS_NAME" value="FeedbackSection_home" />
+      <option name="METHOD_NAME" value="commentOwnerNameIsDisplayed" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -134,11 +111,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Specialist.theShowMoreButtonIsClickable" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="FeedbackSection_home.feedBackCardIsDisplayed" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="GSGTest" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Specialist" />
-      <option name="METHOD_NAME" value="theShowMoreButtonIsClickable" />
+      <option name="MAIN_CLASS_NAME" value="FeedbackSection_home" />
+      <option name="METHOD_NAME" value="feedBackCardIsDisplayed" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FeedbackSection_home.ratingIsDisplayed" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="GSGTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FeedbackSection_home" />
+      <option name="METHOD_NAME" value="ratingIsDisplayed" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -148,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Specialist" />
-        <item itemvalue="TestNG.Specialist.theShowMoreButtonIsClickable" />
-        <item itemvalue="TestNG.Specialist.googlePlayButtonIsClickable" />
-        <item itemvalue="TestNG.Specialist,googlePlayButtonIsDisplayed and 1 more" />
-        <item itemvalue="TestNG.Specialist.googlePlayButtonIsDisplayed" />
+        <item itemvalue="TestNG.FeedbackSection_home" />
+        <item itemvalue="TestNG.FeedbackSection_home.commentOwnerNameIsDisplayed" />
+        <item itemvalue="TestNG.FeedbackSection_home.commentIsDisplayed" />
+        <item itemvalue="TestNG.FeedbackSection_home.ratingIsDisplayed" />
+        <item itemvalue="TestNG.FeedbackSection_home.feedBackCardIsDisplayed" />
       </list>
     </recent_temporary>
   </component>
@@ -179,7 +168,21 @@
       <option name="project" value="LOCAL" />
       <updated>1694348883362</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="new update 21-9">
+      <created>1695261366263</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1695261366263</updated>
+    </task>
+    <task id="LOCAL-00004" summary="new update 21-9">
+      <created>1695261470024</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1695261470024</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -196,22 +199,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="o" />
     <MESSAGE value="dep" />
-    <option name="LAST_COMMIT_MESSAGE" value="dep" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/FeedbackSection_home.java</url>
-          <line>85</line>
-          <properties class="FeedbackSection_home">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="new update 21-9" />
+    <option name="LAST_COMMIT_MESSAGE" value="new update 21-9" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
