@@ -72,7 +72,7 @@ public class SpecialistsSection_home extends Home_page_test {
     public void specialistImageIsClickable() {
         WebElement profileImage = driver.findElement(By.cssSelector(".swiper-slide-active .lazyloaded"));
         profileImage.click();
-        WebElement secondElement = driver.findElement(By.xpath("//h1[contains(.,'طلال عياش الحربي')]"));
+        WebElement secondElement = driver.findElement(By.xpath("//h1[contains(.,'جواهر العبدالسلام')]"));
         Assert.assertTrue(secondElement.isDisplayed());
         driver.navigate().back();
 
@@ -80,12 +80,12 @@ public class SpecialistsSection_home extends Home_page_test {
 
     @Story("Ensure the specialList name is Displayed")
     @Description("verify the specialList name on home page is Displayed")
-    @Test(description = "open the home page and ensure if the specialList name is Displayed and equal طلال عياش الحربي", priority = 24)
+    @Test(description = "open the home page and ensure if the specialList name is Displayed and equal جواهر العبدالسلام", priority = 24)
     public void specialistNameIsDisplayed() {
         WebElement specialistName = driver.findElement(By.cssSelector(".swiper-slide-active .mt-3 a"));
         Assert.assertTrue(specialistName.isDisplayed());
         String name = specialistName.getText();
-        Assert.assertEquals(name, "طلال عياش الحربي");
+        Assert.assertEquals(name, "جواهر العبدالسلام");
     }
 
     @Story("Ensure the specialList name is clickable")
@@ -93,8 +93,9 @@ public class SpecialistsSection_home extends Home_page_test {
     @Test(description = "open the home page and click on the specialList name and ensure to display element from new page", priority = 25)
     public void specialistNameIsClickable() {
         WebElement specialistName = driver.findElement(By.cssSelector(".swiper-slide-active .mt-3 a"));
+        wait.until(ExpectedConditions.visibilityOf(specialistName));
         specialistName.click();
-        WebElement secondElement = driver.findElement(By.xpath("//h1[contains(.,'طلال عياش الحربي')]"));
+        WebElement secondElement = driver.findElement(By.xpath("//h1[contains(.,'جواهر العبدالسلام')]"));
         Assert.assertTrue(secondElement.isDisplayed());
         driver.navigate().back();
     }
@@ -115,7 +116,7 @@ public class SpecialistsSection_home extends Home_page_test {
     public void specialistDescriptionIsClickable() {
         WebElement description = driver.findElement(By.cssSelector(".swiper-slide-active .bio a"));
         description.click();
-        WebElement secondElement = driver.findElement(By.xpath("//h1[contains(.,'طلال عياش الحربي')]"));
+        WebElement secondElement = driver.findElement(By.xpath("//h1[contains(.,'جواهر العبدالسلام')]"));
         Assert.assertTrue(secondElement.isDisplayed());
         driver.navigate().back();
     }

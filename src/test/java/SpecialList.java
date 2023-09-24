@@ -86,7 +86,7 @@ public class SpecialList extends Home_page_test {
     @Description("The specialList Name should Displayed in specialList card")
     @Test(description = "Verify The specialList Name is Displayed in specialList card ", priority = 7)
     public void theSpecialistNameIsDisplayed() {
-        WebElement specialListName = driver.findElement(By.xpath("//*[contains(text() , 'طلال عياش الحربي')]"));
+        WebElement specialListName = driver.findElement(By.xpath("//*[contains(text() , 'جواهر العبدالسلام')]"));
         Assert.assertTrue(specialListName.isDisplayed());
     }
 
@@ -94,7 +94,7 @@ public class SpecialList extends Home_page_test {
     @Description("  The specialList specialization should Displayed in specialList card")
     @Test(description = "Verify The specialList specialization is Displayed in specialList card ", priority = 8)
     public void theSpecialistSpecializationIsDisplayed() {
-        WebElement specialListSpecialization = driver.findElement(By.xpath("//*[contains(text() , 'طلال عياش الحربي')]"));
+        WebElement specialListSpecialization = driver.findElement(By.xpath("//*[contains(text() , 'جواهر العبدالسلام')]"));
         Assert.assertTrue(specialListSpecialization.isDisplayed());
     }
 
@@ -129,7 +129,7 @@ public class SpecialList extends Home_page_test {
     public void theSpecialistProfilePageButtonIsClickable() {
         WebElement profilePageButton = driver.findElement(By.xpath("/html/body/div[1]/div/div[2]/div/div[2]/a[1]"));
         profilePageButton.click();
-        WebElement nameOnProfilePage = driver.findElement(By.xpath("//h1[contains(text(), 'طلال عياش الحربي')]"));
+        WebElement nameOnProfilePage = driver.findElement(By.xpath("//h1[contains(text(), 'جواهر العبدالسلام')]"));
         driver.navigate().back();
 
     }
@@ -260,6 +260,7 @@ public class SpecialList extends Home_page_test {
     public void subscriptionButtonIsDisplayed() {
         WebElement button = driver.findElement(By.xpath("//input[@value = 'اشتراك']"));
         Assert.assertTrue(button.isDisplayed());
+
     }
 
     //
@@ -274,7 +275,7 @@ public class SpecialList extends Home_page_test {
 
     @Story("Click on subscription button with invalid email ")
     @Description("verify to click on subscription button with wrong email")
-    @Test(description = "Verify to click on subscription button with invalid email format ", priority = 28)
+    @Test(description = "Verify to click on subscription button with enter invalid email format on field  ", priority = 28)
     public void clickOnSubscriptionButtonWithInvalidEmail() throws InterruptedException {
         WebElement input = driver.findElement(By.xpath("//*[@class = 'mail-list-email']"));
         WebElement button = driver.findElement(By.xpath("//input[@value = 'اشتراك']"));

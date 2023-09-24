@@ -242,6 +242,7 @@ public class Blog extends Home_page_test{
     }
 
 
+
     @Story("verify the blog image in main page is displayed")
     @Description(" the blog image in main page should displayed")
     @Test(description = "verify if the blog image in main page is displayed", priority = 21)
@@ -329,9 +330,10 @@ public class Blog extends Home_page_test{
     @Description("the profile image of blog publisher in main page should clickable")
     @Test(description = "verify if the profile image of blog publisher in main page is clickable", priority = 30)
     public void theProfileImageOfBlogPublisherInMainPageIsClickable() throws InterruptedException {
-        WebElement blogTitle = driver.findElement(By.cssSelector(".col-md-4:nth-child(1) .avatar"));
-        blogTitle.click();
+        WebElement profileImage = driver.findElement(By.cssSelector(".col-md-4:nth-child(1) .avatar"));
+        profileImage.click();
         WebElement titleInSecondPage = driver.findElement(By.cssSelector("h1:nth-child(2)"));
+        Assert.assertTrue(titleInSecondPage.isDisplayed());
         driver.navigate().back();
     }
     @Story("verify the name of blog publisher in main page is displayed")
@@ -344,11 +346,12 @@ public class Blog extends Home_page_test{
 
     @Story("verify the name of blog publisher in main page is clickable")
     @Description(" the name of blog publisher in main page should clickable")
-    @Test(description = "verify if the name of blog publisher in main page is clickable", priority = 32)
+    @Test(description = "verify if the name of blog publisher in main page is clickable and ensure the title of new page is displayed", priority = 32)
     public void theNameOfBlogPublisherInMainPageIsClickable() throws InterruptedException {
         WebElement blogTitle = driver.findElement(By.cssSelector(".col-md-4:nth-child(1) .m-0 > .author-name"));
         blogTitle.click();
         WebElement titleInSecondPage = driver.findElement(By.cssSelector("h1:nth-child(2)"));
+        Assert.assertTrue(titleInSecondPage.isDisplayed());
         driver.navigate().back();
 
     }
@@ -365,17 +368,18 @@ public class Blog extends Home_page_test{
 
     @Story("verify the details button of blog is displayed")
     @Description(" verify the details button of blog in main page should displayed")
-    @Test(description = "verify if the details button of blog in main page is displayed", priority = 34)
+    @Test(description = "verify if the details button of blog in main page is displayed and equal التفاصيل", priority = 34)
     public void detailsButtonIsDisplayed()  {
         WebElement button = driver.findElement(By.cssSelector(".col-md-4:nth-child(1) .btn"));
         Assert.assertTrue(button.isDisplayed());
+        String getText = button.getText();
+        Assert.assertEquals(getText,"التفاصيل");
     }
 
     @Story("verify the details button of blog is clickable")
     @Description(" verify the details button of blog in main page should clickable")
-    @Test(description = "verify if the details button of blog in main page is clickable", priority = 35)
-    public void detailsButtonIsClickable() throws InterruptedException {
-//        jse.executeScript("window.scrollBy(0,3100)", "");
+    @Test(description = "verify if the details button of blog in main page is clickable ", priority = 35)
+    public void detailsButtonIsClickable()  {
         WebElement button = driver.findElement(By.cssSelector(".col-md-4:nth-child(1) .btn"));
         button.click();
         WebElement titleInSecondPage = driver.findElement(By.xpath("/html/body/div[1]/div/div/h1"));
@@ -383,9 +387,9 @@ public class Blog extends Home_page_test{
         driver.navigate().back();
     }
 
-    @Story("The show more button should displayed")
-    @Description("verify The show more button should displayed")
-    @Test(description = "Verify The show more button is displayed ", priority = 37)
+    @Story("The show more icon should displayed")
+    @Description("verify The show more icon should displayed")
+    @Test(description = "Verify The show more icon is displayed ", priority = 37)
     public void theShowMoreButtonIsDisplayed() {
         WebElement showMoreButton = driver.findElement(By.xpath("//*[contains(@class, 'btn-gmore') and contains(@class, 'blog-more')]"));
         wait.until(ExpectedConditions.visibilityOf(showMoreButton));
@@ -408,7 +412,7 @@ public class Blog extends Home_page_test{
 
 
 
-    @Story("The google play button should displayed")
+    @Story("displayed google play button ")
     @Description("verify The google play button should displayed ")
     @Test(description = "Verify The google play button is displayed", priority = 39)
     public void googlePlayButtonIsDisplayed() throws InterruptedException {
@@ -504,13 +508,13 @@ public class Blog extends Home_page_test{
     @Story("Click on subscription button with valid email ")
     @Description("verify to click on subscription button with correct email")
     @Test(description = "Verify to click on subscription button with valid email format ", priority = 45)
-    public void clickSubscriptionButtonWithValidEmail() throws InterruptedException {
+    public void clickSubscriptionButtonWithValidEmail()  {
 //        jse.executeScript("window.scrollBy(0,5000)", "");
         WebElement input = driver.findElement(By.xpath("//*[@class = 'mail-list-email']"));
         WebElement button = driver.findElement(By.xpath("//input[@value = 'اشتراك']"));
         input.sendKeys("osama@email.com");
         button.click();
-        sleep(2000);
+        driver.navigate().back();
 
     }
 

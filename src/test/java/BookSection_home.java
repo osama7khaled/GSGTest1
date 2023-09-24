@@ -18,7 +18,6 @@ public class BookSection_home extends Home_page_test {
     public void titleIsDisplayed() {
         WebElement title = driver.findElement(By.xpath("//*[text()='ابدأ جلستك الأولى مع مستشارك الي يناسبك مع خصم 60%']"));
         String getText = title.getText();
-
         Assert.assertTrue(title.isDisplayed());
         Assert.assertEquals(getText, "ابدأ جلستك الأولى مع مستشارك الي يناسبك مع خصم 60%");
     }
@@ -46,11 +45,12 @@ public class BookSection_home extends Home_page_test {
 
     @Story("Ensure the bookAppointment button is clickable")
     @Description("verify the bookAppointment button on home page is clickable")
-    @Test(description = "click on the bookAppointment button on home page and ensure if any element from new page is displayed", priority = 13)
+    @Test(description = "click on the bookAppointment button on home page and ensure if title from new page is displayed", priority = 13)
     public void bookAppointmentButtonIsClickable()  {
         WebElement bookButton = driver.findElement(By.linkText("احجز جلستك الأولى"));
         bookButton.click();
         WebElement elementInNewWindow = driver.findElement(By.cssSelector(".product-header__title"));
+        Assert.assertTrue(elementInNewWindow.isDisplayed());
         driver.navigate().back();
 
 
